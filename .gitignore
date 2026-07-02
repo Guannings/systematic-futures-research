@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Live-run artifacts (session-specific, not source code)
+logs/
+intraday_state.json
+intraday_state.json.tmp
+position_state.json
+position_state.json.tmp
+
+# Backups
+*.bak
+*.tmp
+*.orig
+
+# Email exports (may contain account numbers)
+*.eml
+
+# Proprietary broker bridge SDK - not redistributable
+BrokerBridge/
+
+# Private parallel-strategy material (PDFs + code for a separate
+# index-futures strategy run alongside this one). Out of scope.
+teammate_strategy/
+
+# Private competition tooling (turnover bot, order tests). Names the real
+# platform/symbol — must never be part of the public repo.
+private/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Local archival notes (private, not for public repo)
+SESSION_BRIEF.md
+
+# Un-scrubbed local originals of the index study — these still contain the real
+# exchange / broker / venue / ticker names and MUST NEVER be committed. The
+# public repo carries the de-identified copies under index-trend/.
+systematic-futures-research/
+
+# Local archive
+private.zip
